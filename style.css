@@ -455,6 +455,7 @@ p { line-height: 1.75; }
   display: flex;
   align-items: center;
   gap: 64px;
+  flex-direction: row-reverse;
 }
 .about-sketch {
   flex-shrink: 0;
