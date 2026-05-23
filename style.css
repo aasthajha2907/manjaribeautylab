@@ -142,7 +142,7 @@ p { line-height: 1.75; }
 
 /* ── SERVICES GRID ── */
 .services-section { background: var(--white); position: relative; overflow: hidden; }
-.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(200,169,122,0.15); border: 1px solid rgba(200,169,122,0.15); border-radius: 8px; overflow: hidden; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(200,169,122,0.15); border: 1px solid rgba(200,169,122,0.15); border-radius: 8px; overflow: hidden; }
 .svc-tile {
   background: var(--white); padding: 36px 28px;
   display: flex; flex-direction: column; gap: 10px;
