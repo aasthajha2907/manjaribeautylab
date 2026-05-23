@@ -18,8 +18,8 @@
 
 /* ── RESET ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; overflow-x: hidden; }
-body { font-family: var(--font-sans); background: var(--cream); color: var(--dark); font-weight: 300; line-height: 1.6; overflow-x: hidden; max-width: 100vw; }
+html { scroll-behavior: smooth; overflow-x: clip; width: 100%; }
+body { font-family: var(--font-sans); background: var(--cream); color: var(--dark); font-weight: 300; line-height: 1.6; overflow-x: clip; width: 100%; }
 img { max-width: 100%; display: block; }
 a { text-decoration: none; color: inherit; }
 
@@ -376,9 +376,9 @@ p { line-height: 1.75; }
 /* No negative offsets — all flowers stay inside their parent */
 /* Max rotation ±30deg, never flipped */
 .flower-tr {
-  top: 0; right: 0;
-  width: 520px; opacity: 0.18;
-  transform: rotate(15deg);
+  top: 60px; right: 0;
+  width: 480px; opacity: 0.18;
+  transform: rotate(0deg);
   transform-origin: top right;
 }
 .flower-bl {
@@ -488,5 +488,6 @@ p { line-height: 1.75; }
 }
 @media (max-width: 768px) {
   .about-strip { flex-direction: column; gap: 32px; }
-  .about-sketch-img { width: 100%; height: 280px; }
+  .about-sketch { display: block; width: 100%; }
+  .about-sketch-img { width: 100%; height: 320px; object-fit: cover; object-position: top center; }
 }
