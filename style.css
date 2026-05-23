@@ -160,7 +160,9 @@ p { line-height: 1.75; }
   background: var(--dark);
   padding: 96px 48px;
   position: relative; overflow: hidden;
-  display: flex; align-items: center; gap: 80px;
+  display: flex; align-items: center; gap: 64px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .about-flower { position: absolute; right: 48px; top: 50%; transform: translateY(-50%); width: 280px; opacity: 0.5; }
 .about-content { max-width: 640px; position: relative; z-index: 2; }
@@ -451,12 +453,7 @@ p { line-height: 1.75; }
 }
 
 /* ── ABOUT STRIP LAYOUT WITH SKETCH ── */
-.about-strip {
-  display: flex;
-  align-items: center;
-  gap: 64px;
-  flex-direction: row-reverse;
-}
+
 .about-sketch {
   flex-shrink: 0;
   position: relative;
